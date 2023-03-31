@@ -1,0 +1,24 @@
+.zo{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 20 px;
+  
+  }
+  
+  .zo{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  
+  .zo:hover{
+  
+    transform: scale(1.5);
+    
+    
+  
+  }
+
+  

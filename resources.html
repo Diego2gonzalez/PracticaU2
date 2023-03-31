@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function color() {
+            document.getElementById("Amigues").style.backgroundColor="pink";
+            document.getElementById("Amigues").style.color="blue";
+            document.getElementById("Amigues").style.fontSize="50px";
+        }
+    </script>
+
+    <script>
+         function cambiarImg(imagen) {
+            document.getElementById(img1).src="img/Vanesa2.png";
+            document.getElementById(img2).src="img/Diego2.jpg";
+            document.getElementById(img3).src="img/yessenia.jpg";
+        
+         }
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-light fixed-top" 
+    style="color: black; background-color: aqua !important;">
+              
+       
+        <header class="container-fluid">
+          
+            <!--Logo con link a la pagina principal-->
+            <a class="navbar-brand"> 
+               
+                <img class="logo" src="img/fb.png" width="30px" height="30px"/>
+                <!--Menu de navegacion-->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav"> <!--Contenedor de la lista, li es para poner un punto antes -->
+                    <li  class="nav-item">
+                        <a class="nav-link" href="index.html">Platform</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link" href="Pricing.html">Pricing</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--Contenedor de acciones de usuario-->
+            <div class="actions">
+                <a>Sign In</a>
+                <button class="btn btn-dark">Start Free Trial</button>
+             </div>
+         </header>
+        </nav>
+        <br>
+        <br>
+       <br>
+        <div>
+            <p id="Amigues"> Este es otro texto</p>
+            <button type="button" onclick="color()">Click aquí</button>
+            <br>
+            <br>
+            <button onclick="alert('Ha sido hackeado')">NO HAGAS CLICK</button>
+        </div>
+        <br>
+        <br>
+        <div class="mouse"id="imagen">
+            <img class="zo" id="img1" src="img/1.jpg" alt="" width="200" height="200" onmouseover="src='img/2.jpg'" onmouseout="this.src='img/1.jpg';" >
+            <img class="zo" id="img2" src="img/3.jpg" alt="" width="200" height="200" onmouseover="this.src='img/4.jpg'" onmouseout="this.src='img/3.jpg';">
+            <img class="zo" id="img3" src="img/5.jpg" alt="" width="200" height="200" onmouseover="this.src='img/6.jpg'" onmouseout="this.src='img/5.jpg';">
+
+        </div>
+    </body>
+</html>

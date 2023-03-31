@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+    <script></script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "diegogomira@gmail.com",
+                Password: "3C2721163A2E129F17EDFC6F23D7383AA0CA",
+                To: 'yessy.coronna@gmail.com',
+                From: "diegogomira@gmail.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(function (message) {
+                alert("mail sent succesfully")
+            }
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success navbar-light fixed-top"
+        style="color: black; background-color: aqua !important;">
+        <header class="container-fluid">
+            <!-- Logo con link a la página principal -->
+            <a class="navbar-brand">
+                <img src="img/fb.png" width="30px" height="30px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav nav-fill">
+                    <li>
+                        <a class="nav-link" href="">Platform</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contenedor de acciones de usuario -->
+            <div class="actions">
+                <a>Sign In</a>
+                <button class="btn btn-primary">Start free trial</button>
+            </div>
+        </header>
+    </nav>
+
+    <h1> Mi Primer Pagina Este Semestre </h1>
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6> <!-- Este es un comentario -->
+
+    <p>ESte es un parrafo</p>
+    <p>ESte es un parrafo</p>
+    <p>ESte es un parrafo</p>
+    <p>ESte es un parrafo</p>
+
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" alt="Los Angeles" width="300px" height="300px" class="d-block w-80">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.jpg" alt="Chicago" width="300px" height="300px" class="d-block w-80">
+            </div>
+            <div class="carousel-item">
+                <img src="img/4.jpg" alt="Chicago" width="300px" height="300px" class="d-block w-80">
+            </div>
+            <div class="carousel-item">
+                <img src="img/5.jpg" alt="New York" width="300px" height="300px" class="d-block w-80">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+    <form>
+        <H1>Mi primer blog</H1>
+        <p>
+           
+        </p>
+        <form method="POST">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary" onclick="sendEmail()">Enviar</button>
+
+                </div>
+            </div>
+        </form>
+    </form>
+
+    <form> <!-- Este es un formulario-->
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="fname" placeholder="Nombre"><br><br>
+        <label>Apellido</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Apellido"><br><br>
+        <label>Edad</label>
+        <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35"><br><br>
+        <!--br es para salto de línea-->
+        <label>Email</label>
+        <input type="email" id="email" name="email" placeholder="Correo"><br><br>
+        <label>Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <img src="img/dog.jpg" alt="" height="50px" width="50px">
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uzB_bVqXgLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       
+        
+
+        <article class="publish">
+            <h3>
+                Publish your blog in minutes
+            </h3>
+            <p>
+                Your blog is your most powerful asset to build, engage, and retain a loyal
+                audience. But you don’t have hours to create content that may or may not
+                work.
+            </p>
+            <form id="myForm" class="signup-form" action="">
+                <p>Start publishing today:</p>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Enter email">
+                    <button type="submit">Start</button>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <section class="features">
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="img/icon.png" alt="">
+                </figure>
+                <h3>Titulo 1</h3>
+                <p>
+                    Este es un parrafo
+                </p>
+                <a href="">Publica instantaneamente</a>
+            </div>
+            <div class="feature-image">
+                <figure>
+                    <img src="img/paisa.jpg" alt="">
+                </figure>
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="img/icon.png" alt="">
+                </figure>
+                <h3>Titulo 1</h3>
+                <p>
+                    Este es un parrafo
+                </p>
+                <a href="">Publica instantaneamente</a>
+            </div>
+            <div class="feature-image">
+                <figure>
+                    <img src="img/paisa.jpg" alt="">
+                </figure>
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="img/icon.png" alt="">
+                </figure>
+                <h3>Titulo 1</h3>
+                <p>
+                    Este es un parrafo
+                </p>
+                <a href="">Publica instantaneamente</a>
+            </div>
+            <div class="feature-image">
+                <figure>
+                    <img src="img/paisa.jpg" alt="">
+                </figure>
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="img/icon.png" alt="">
+                </figure>
+                <h3>Titulo 1</h3>
+                <p>
+                    Este es un parrafo
+                </p>
+                <a href="">Publica instantaneamente</a>
+            </div>
+            <div class="feature-image">
+                <figure>
+                    <img src="img/paisa.jpg" alt="">
+                </figure>
+            </div>
+        </article>
+    </section>
+
+    <section class="success-stories">
+        <article class="overview">
+            <h2>Growing ecommerce brands rely on Matcha.</h2>
+            <p>
+                Are you tired of wasting time publishing blog articles to only see a
+                trickle of traffic and no impact on sales? Join hundreds of business
+                owners and ecommerce marketers who rely on Matcha for quality content
+                and consistent performance from their blogs.
+            </p>
+            <button>
+                Who Uses Matcha?
+            </button>
+            <figure>
+                <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="">
+            </figure>
+        </article>
+        <article class="stories-carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade pointer-event" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-media">
+                                <figure>
+                                    <img src="img/dog.jpg" alt="">
+
+                                </figure>
+                                <div class="company">
+                                    <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4>Everly</h4>
+                                <h3>
+                                    Early-Stage CPG Brand Increases Lead Conversion 20x,
+                                    Ecommerce Revenue 20%
+                                </h3>
+                                <div class="results">
+                                    <img src="img/dog.jpg" alt="Cart icon">
+                                    <p>22% of monthly revenue influenced by content</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button>See Case Study</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+    <section class="how-does-it-work">
+        <h2 class="title">What do you like to do on weekends?</h2>
+        
+        <a target="_blank" class="fcc-btn" href="https://www.youtube.com"> <button>OPEN YOUTUBE</button></a>  
+        <div class="steps">
+            <article class="card-step">
+                <div class="card-step-image">
+                    <img src="img/hablar.gif" alt="Measure" class="card-step-bg">
+                </div>
+                <div class="card-step-body">
+                    <h3>HABLA CON AMIGOS</h3>
+                    <p>
+                        CONOCE GENTE NUEVA Y HABLA CON TUS AMIGOS
+                    </p>
+                    <a href="https://www.youtube.com">WWW</a>
+                </div>
+            </article>
+            <article class="card-step">
+                <div class="card-step-image">
+                    <img src="img/ANIMALES.gif" alt="Measure" class="card-step-bg">
+                </div>
+                <div class="card-step-body">
+                    <h3>CUIDA A TUS MASCOTAS</h3>
+                    <p>
+                        CUIDA DE TUS COMPAÑEROS FIELES
+                    </p>
+                    <a href="https://www.youtube.com">WWW</a>
+                </div>
+            </article>
+            <article class="card-step">
+                <div class="card-step-image">
+                    <img src="img/BAILE.gif" alt="Measure" class="card-step-bg">
+                </div>
+                <div class="card-step-body">
+                    <h3>BAILA CON TUS AMIGOS</h3>
+                    <p>
+                        VEN A BAILAR CON TUS AMIGOS MIENTRAS TE DIVIERTES
+                    </p>
+                    <a href="https://www.youtube.com">WWW</a>
+                </div>
+            </article>
+            <article class="card-step">
+                <div class="card-step-image">
+                    <img src="img/deporte.gif" alt="Measure" class="card-step-bg">
+                </div>
+                <div class="card-step-body">
+                    <h3>HAZ DEPORTE</h3>
+                    <p>
+                        DIVIERTETE JUGANDO TUS DEPORTES FAVORITOS
+                    </p>
+                    <a href="https://www.youtube.com">WWW</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
